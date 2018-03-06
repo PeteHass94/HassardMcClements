@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hassard McClements Limited</title>
+    <!-- CSS -->
+    <link href="./Resources/CSS/reset.css" type="text/css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Rufina:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Quattrocento:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet" />
+    <!-- Icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./fontawesome-pro-5.0.6/fontawesome-pro-5.0.6/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- customised -->
+    <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="./Resources/js/main.js"></script>
+  </head>
+  <body>
+    <main id="landingPage">
+      <!-- Modal -->
+      <div class="modal fade" id="PhoneUs" tabindex="-1" role="dialog" aria-labelledby="PhoneUs" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLongTitle">Phone Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <i class="far fa-phone"></i><a id="PhoneNumber" href="tel:02866320555">028 6632 0555</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Call</button>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- end Modal -->
+
+      <div class="LPContainer" id="banner">
+        <div class="content">
+        <div class="LogoIcon">
+          <img src="./Resources/images/icon.png" alt="">
+        </div>
+        <div class="WelcomeMessage">
+          <h1>Welcome to Hassard McClements</h1>
+          <div></div>
+        </div>
+        <div class="officeStatus">
+          <span id="open_closed"></span>
+          <script type="text/javascript">window.onload = open_closed('day_hour');</script>
+        </div>
+        </div>
+      </div>
+
+      <div class="middle">
+<!--        <div class="LPContainer" id="NewsFeed">
+          <div class="content">
+            <div class="WelcomeMessage">
+              <h1>News Feed</h1>
+              <div></div>
+            </div>
+              <div class="">
+                http://feeds.bbci.co.uk/news/video_and_audio/business/rss.xml
+             </div>
+          </div>
+        </div> -->
+        <div class="LPContainer fade1" id="BusinessCard">
+          <img src="./Resources/images/HassardMCCcard.png" alt="">
+        </div>
+        <div class="Contact">
+          <div class="LPContainer fade2" id="phone">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PhoneUs">
+                <i class="far fa-phone-square"></i>
+            </button>
+          </div>
+          <div class="LPContainer fade2" id="phone">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Launch demo modal
+            </button>
+          </div>
+
+          <div class="LPContainer fade2" id="email">
+            <i class="far fa-envelope-square"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="enter">
+        <a href="#">
+          <img class="fade3" src="./Resources/images/logoAsArrow2.png" alt="">
+        </a>
+      </div>
+
+    <div class="grid">
+      <div class="square">
+        <i class="fal fa-address-book"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-briefcase"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-archive"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-book"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-building"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-calculator"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-chart-area"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-globe"></i>
+      </div>
+      <div class="square">
+        <i class="far fa-phone"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-money-bill"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-paperclip"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-save"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-envelope"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-hourglass-end"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-stopwatch"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-coffee"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-fax"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-pencil-alt"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-credit-card"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-file-alt"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-lightbulb"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-map-marker-alt"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-chart-pie"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-pound-sign"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-info"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-euro-sign"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-address-card"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-folder-open"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-certificate"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-chart-line"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-bookmark"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-globe"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-hourglass-end"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-clock"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-search"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-industry"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-chart-bar"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-tasks"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-calculator"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-key"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-handshake"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-mobile"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-inbox"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-archive"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-save"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-address-book"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-coffee"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-money-bill"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-chart-area"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-pen"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-briefcase"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-archive"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-address-book"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-building"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-calculator"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-chart-area"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-money-bill"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-save"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-globe"></i>
+      </div>
+      <div class="square">
+        <i class="far fa-phone"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-coffee"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-book"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-paperclip"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-envelope"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-hourglass-end"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-stopwatch"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-map-marker-alt"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-fax"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-pound-sign"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-pencil-alt"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-credit-card"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-file-alt"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-euro-sign"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-lightbulb"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-chart-pie"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-certificate"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-info"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-globe"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-address-card"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-folder-open"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-hourglass-end"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-chart-line"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-bookmark"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-calculator"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-handshake"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-clock"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-search"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-industry"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-chart-bar"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-tasks"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-archive"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-key"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-mobile"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-inbox"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-address-book"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-save"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-pen"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-coffee"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-money-bill"></i>
+      </div>
+      <div class="square">
+        <i class="fal fa-chart-area"></i>
+      </div>
+    </div>
+
+    </main>
+<!--    <script>$(".fade1").hide(0).delay(500).fadeIn(5000)</script>
+    <script>$(".fade2").hide(0).delay(900).fadeIn(5000)</script>
+    <script>$(".fade3").hide(0).delay(1500).fadeIn(5000)</script> -->
+
+    <script type="text/javascript">
+      $('#myModal').on('shown.bs.modal', function () {$('#myInput').trigger('focus')})
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./Resources/js/main.js"></script>
+  </body>
+
+</html>

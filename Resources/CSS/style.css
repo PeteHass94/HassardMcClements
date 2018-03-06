@@ -1,0 +1,275 @@
+/*
+color hunt.co: http://colorhunt.co/c/71366
+ dark red: #FF4545
+ orange: #FF9867
+ light orange: #FFBF87
+ yellow: #FFEDB2
+
+ http://colorhunt.co/c/78489
+ blue: #18587A
+ orange: #FC624D
+ pink: #FCA7A7
+ light pink: #FFD6D6
+
+font: sintony and poppins from https://www.behance.net/gallery/35768979/Typography-Google-Fonts-Combinations
+blue: #3490DE for read more links
+white: #ffffff
+black: #000000
+
+http://www.99colors.net/name/burgundy
+Triadic Colors
+
+#208000 Green
+#165A00 Dark Green
+#3CA619  Lime Green
+#002080 Dark Blue
+#00165A navy
+#193CA6 blue
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Rufina:400,700" rel="stylesheet">
+google api key AIzaSyCs6rT_VVjyfX5dBnxWY5XXKQyb8LBXkvE
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1500827725695!6m8!1m7!1s1H78Wv1YJNdr2rPtgXsnvA!2m2!1d54.3439488311084!2d-7.635358064693378!3f310.243354077671!4f-9.52507538905617!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+#800020 Burgundy
+#00165A navy
+background-color: #E3E2DF
+white: #ffffff
+black: #000000
+
+  font-family: "Rufina", "Quattrocento", Georgia, serif;
+  font-family: "Oxygen", "Oswald", Helvetica, sans-serif;
+
+*/
+
+html {
+  font-size: 16px;
+}
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-family: "Oxygen", "Oswald", Helvetica, sans-serif;
+  background-color: #E3E2DF;
+}
+main {
+  max-width: 70rem;
+  margin: auto;
+}
+/*Landing Page */
+#landingPage {
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/*grid background */
+.grid {
+  height: 100%;
+  width: 70rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-top: auto;
+
+
+}
+.grid .square{
+  height: 10%;
+  width: 10%;
+  background-color: rgba(227, 226, 223, 0.6);
+  display: flex;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.grid .square i {
+  font-size: 4em;
+  color: rgb(240, 240, 240);
+}
+.grid .square:hover {
+  background-color: #00165A;
+  opacity: 0.7;
+}
+.grid .square:hover i {
+  color: #800020;
+}
+.grid .square:nth-child(2n):hover {
+  background-color: #800020;
+  opacity: 0.7;
+}
+.grid .square:nth-child(2n):hover i {
+  color: #00165A;
+}
+.grid .square:nth-child(3n-1):hover {
+  background-color: #FFFFFF;
+  opacity: 0.7;
+}
+.grid .square:nth-child(3n-1):hover i {
+  color: #00165A;
+}
+.grid .square:nth-child(4n-1):hover {
+  background-color: #800020;
+  opacity: 0.7;
+}
+.grid .square:nth-child(4n-1):hover i {
+  color: #FFFFFF;
+}
+/* banner */
+.LPContainer {
+  background-color: rgba(255,255,255,0.5);
+  position: relative;
+  z-index: 3;
+}
+#banner {
+  height: 10em;
+  width: 100%;
+  z-index: 3;
+  border-bottom: 0.3em solid #800020;
+}
+#banner .content {
+  height: 100%;
+  margin: auto 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#banner .LogoIcon img{
+  height: 4em;
+}
+.WelcomeMessage h1 {
+  color: #00165A;
+  font-size: 2em;
+}
+.WelcomeMessage div{
+    width: 100%;
+    height: 0.3em;
+    background-color: #800020;
+}
+.officeStatus {
+  font-size: 2em;
+}
+/* middle */
+.middle {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  position: relative;
+}
+/*NewsFeed */
+
+/* BusinessCard */
+
+#BusinessCard {
+  border: 0.3em solid #00165A;
+
+}
+#BusinessCard img {
+  height: 24em;
+  width: 58em;
+}
+/* contact */
+.Contact {
+  display: flex;
+  flex-direction: row;
+  width: 58.6em;
+  justify-content: space-between;
+  margin-top:1em;
+  background: Transparent;
+}
+.Contact .LPContainer{
+  height: 7em;
+  width: 7em;
+  display: flex;
+  border: 0.3em solid #800020;
+  justify-content: center;
+  align-items: center;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.Contact i {
+  font-size: 4em;
+  color: #00165A;
+}
+#phone .btn,
+#phone .btn:hover,
+#phone .btn:focus,
+#phone .btn:active,
+#phone .btn:visited,
+#phone .btn-primary:focus
+ {
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+            box-shadow: none;
+
+        }
+
+.Contact .LPContainer:hover{
+  background-color: #00165A;
+}
+.Contact .LPContainer:hover i{
+  color: #FFFFFF;
+}
+/* modal */
+#PhoneUs.modal .btn-primary {
+  background-color: #800020;
+  border-color: #00165A;
+  box-shadow: #00165A;
+}
+
+
+
+
+/* enter button */
+
+.enter {
+  height: 20em;
+  width: 20em;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  transition: all 10s;
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  border-radius: 20em;
+}
+.enter:hover {
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -webkit-transform: translate(0, -5px);
+  -moz-transform: translate(0, -5px);
+  -o-transform: translate(0, -5px);
+  -ms-transform: translate(0, -5px);
+  transform: translate(0, -5px);
+}
+.enter:hover {
+  background-color: rgba(255,255,255,0.5);
+  transition: background-color 2s ease-out;
+}
+.enter a img{
+  height: 15em;
+  margin: auto;
+  opacity: 1;
+}
+.enter img {
+  z-index: 3;
+}
