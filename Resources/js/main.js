@@ -76,3 +76,67 @@ function open_closed(day_hour)
         return true;
 }
 var isActive = false;
+
+
+$(function() {
+  $('#allCustomers').hover(function() {
+    if($('#LimitedCustomer input').is(':checked')) {
+    $('#LimitedCustomer #isChecked').css('display', 'none'); }
+    if($('STCustomer input').is(':checked')) {
+    $('#STCustomer #isChecked').css('display', 'none'); }
+    $('#allCustomers #availableChecked').css('display', 'none');
+    $('#LimitedCustomer #availableChecked').css('display', 'none');
+    $('#LimitedCustomer #notChecked').css('display', 'flex');
+    $('#STCustomer #availableChecked').css('display', 'none');
+    $('#STCustomer #notChecked').css('display', 'flex');
+  }, function() {
+    $('#LimitedCustomer #availableChecked').css('display', 'flex');
+    $('#LimitedCustomer #notChecked').css('display', 'none');
+    $('#STCustomer #availableChecked').css('display', 'flex');
+    $('#STCustomer #notChecked').css('display', 'none');
+  });
+});
+$(function() {
+  $('#LimitedCustomer').hover(function() {
+    if($('#allCustomers input').is(':checked')) {
+    $('#allCustomers #isChecked').css('display', 'none'); }
+    if($('STCustomer input').is(':checked')) {
+    $('#STCustomer #isChecked').css('display', 'none'); }
+    $('#LimitedCustomer #availableChecked').css('display', 'none');
+    $('#allCustomers #availableChecked').css('display', 'none');
+    $('#allCustomers #notChecked').css('display', 'flex');
+    $('#STCustomer #availableChecked').css('display', 'none');
+    $('#STCustomer #notChecked').css('display', 'flex');
+  }, function() {
+    if($('#allCustomers input').is(':checked')) {
+    $('#allCustomers #isChecked').css('display', 'flex'); }
+    if($('STCustomer input').is(':checked')) {
+    $('#STCustomer #isChecked').css('display', 'flex'); }
+    $('#allCustomers #availableChecked').css('display', 'flex');
+    $('#allCustomers #notChecked').css('display', 'none');
+    $('#STCustomer #availableChecked').css('display', 'flex');
+    $('#STCustomer #notChecked').css('display', 'none');
+  });
+});
+$(function() {
+  $('#STCustomer').hover(function() {
+    if($('#allCustomers input').is(':checked')) {
+    $('#allCustomers #isChecked').css('display', 'none'); }
+    if($('LimitedCustomer input').is(':checked')) {
+    $('#STCustomer #isChecked').css('display', 'none'); }
+    $('#STCustomer #availableChecked').css('display', 'none');
+    $('#LimitedCustomer #availableChecked').css('display', 'none');
+    $('#LimitedCustomer #notChecked').css('display', 'flex');
+    $('#allCustomers #availableChecked').css('display', 'none');
+    $('#allCustomers #notChecked').css('display', 'flex');
+  }, function() {
+    if($('#allCustomers input').is(':checked')) {
+    $('#allCustomers #isChecked').css('display', 'flex'); }
+    if($('STCustomer input').is(':checked')) {
+    $('#LimitedCustomer #isChecked').css('display', 'flex'); }
+    $('#LimitedCustomer #availableChecked').css('display', 'flex');
+    $('#LimitedCustomer #notChecked').css('display', 'none');
+    $('#allCustomers #availableChecked').css('display', 'flex');
+    $('#allCustomers #notChecked').css('display', 'none');
+  });
+});
