@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hassard McClements Limited</title>
+    <!-- CSS -->
+    <link href="./Resources/CSS/reset.css" type="text/css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Rufina:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Quattrocento:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet" />
+    <!-- Icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./fontawesome-pro-5.0.6/fontawesome-pro-5.0.6/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- customised -->
+    <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet">
+    <link href="./Resources/CSS/home.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="./Resources/js/main.js"></script>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="PhoneUs" tabindex="-1" role="dialog" aria-labelledby="PhoneUs" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalTitle">Phone Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <i class="far fa-phone"></i><a id="PhoneNumber" href="tel:02866320555">028 6632 0555 <i class="fal fa-hand-pointer"></i></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a id="PhoneNumber" href="tel:02866320555"><button type="button" class="btn btn-primary">Call</button></a>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="EmailUs" tabindex="-1" role="dialog" aria-labelledby="EmailUs" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalTitle">Email Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <i class="far fa-phone"></i><a id="EmailAddress" href="mailto:accounts@hassardmcc.co.uk?Subject=From%20Website" target="_top">accounts@hassardmcc.co.uk <i class="fal fa-hand-pointer"></i></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a id="Contact-Page" href="./contact"><button type="button" class="btn btn-primary">Contact Page</button></a>
+        <a id="EmailAddress" href="mailto:accounts@hassardmcc.co.uk?Subject=From%20Website&body=Hassard McClements Limited" target="_top"><button type="button" class="btn btn-primary">Email</button></a>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- end Modals -->
+
+    <div id=HomeTitle><h1>Hassard McClements Limited</h1></div>
+  <div class="belowTitle">
+    <div class="officeDetails">
+      <div class="ODContent">
+        <div class="Contact">
+          <div class="smallContainer" id="phone">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PhoneUs">
+                <i class="far fa-phone-square"></i>
+            </button>
+          </div>
+          <div class="smallContainer" id="email">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EmailUs">
+                <i class="far fa-envelope-square"></i>
+            </button>
+          </div>
+        </div>
+        <div class="officeStatus">
+          <span id="open_closed"></span>
+          <script type="text/javascript">window.onload = open_closed('day_hour');</script>
+        </div>
+      </div>
+    </div>
+    <nav id="navigation">
+      <div class="navContent">
+        <div class="menu">
+            <ul>
+              <li class="openTab"><a href="#Home" ><i class="far fa-home"></i></i><p>Home</p></a></li>
+              <li><a href="#Services"><i class="far fa-calculator"></i></i><p>Services</p></a></li>
+              <li><a href="#Staff"><i class="far fa-users"></i><p>Staff</p></a></li>
+              <li><a href="#Contact"><i class="fal fa-address-book"></i><p>Contact Us</p></a></li>
+              <li><a href="#More"><i class="far fa-info"></i></i><p>More Info</p></a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <main id="home">
+      <div class="left">
+        <div class="customerType">
+          <div class="smallContainer" id="allCustomers">
+            <input type="radio" checked="checked" name="customerType">
+            <span class="checkmark"><i class="far fa-check"></i></span>
+          </div>
+          <div class="smallContainer" id="LimitedCustomer">
+            <input type="radio" name="customerType">
+            <span class="checkmark"><i class="far fa-check"></i></span>
+          </div>
+          <div class="smallContainer" id="STustomer">
+            <input type="radio" name="customerType">
+            <span class="checkmark"><i class="far fa-check"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="middle">
+
+      </div>
+      <div class="left">
+        <div class="address">
+
+        </div>
+        <div class="addressLinks">
+
+        </div>
+      </div>
+
+
+
+
+
+    </main>
+  </div>
+    <script type="text/javascript">
+      $('#myModal').on('shown.bs.modal', function () {$('#myInput').trigger('focus')})
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./Resources/js/main.js"></script>
+  </body>
+
+</html>

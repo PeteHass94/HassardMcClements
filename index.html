@@ -16,40 +16,63 @@
     <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- customised -->
     <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet">
+    <link href="./Resources/CSS/landingPage.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="./Resources/js/main.js"></script>
   </head>
   <body>
     <main id="landingPage">
+
       <!-- Modal -->
       <div class="modal fade" id="PhoneUs" tabindex="-1" role="dialog" aria-labelledby="PhoneUs" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="ModalLongTitle">Phone Us</h5>
+          <h5 class="modal-title" id="ModalTitle">Phone Us</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-            <i class="far fa-phone"></i><a id="PhoneNumber" href="tel:02866320555">028 6632 0555</a>
+            <i class="far fa-phone"></i><a id="PhoneNumber" href="tel:02866320555">028 6632 0555 <i class="fal fa-hand-pointer"></i></a>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Call</button>
+          <a id="PhoneNumber" href="tel:02866320555"><button type="button" class="btn btn-primary">Call</button></a>
         </div>
       </div>
       </div>
       </div>
 
-      <!-- end Modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="EmailUs" tabindex="-1" role="dialog" aria-labelledby="EmailUs" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalTitle">Email Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <i class="far fa-phone"></i><a id="EmailAddress" href="mailto:accounts@hassardmcc.co.uk?Subject=From%20Website" target="_top">accounts@hassardmcc.co.uk <i class="fal fa-hand-pointer"></i></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a id="Contact-Page" href="./contact"><button type="button" class="btn btn-primary">Contact Page</button></a>
+          <a id="EmailAddress" href="mailto:accounts@hassardmcc.co.uk?Subject=From%20Website&body=Hassard McClements Limited" target="_top"><button type="button" class="btn btn-primary">Email</button></a>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!-- end Modals -->
 
-      <div class="LPContainer" id="banner">
+      <div class="LPContainer fade0" id="banner">
         <div class="content">
         <div class="LogoIcon">
           <img src="./Resources/images/icon.png" alt="">
         </div>
         <div class="WelcomeMessage">
-          <h1>Welcome to Hassard McClements</h1>
+          <h1>Welcome to Hassard McClements Limited</h1>
           <div></div>
         </div>
         <div class="officeStatus">
@@ -59,7 +82,7 @@
         </div>
       </div>
 
-      <div class="middle">
+      <div class="middle fade1">
 <!--        <div class="LPContainer" id="NewsFeed">
           <div class="content">
             <div class="WelcomeMessage">
@@ -71,33 +94,29 @@
              </div>
           </div>
         </div> -->
-        <div class="LPContainer fade1" id="BusinessCard">
+        <div class="LPContainer" id="BusinessCard">
           <img src="./Resources/images/HassardMCCcard.png" alt="">
         </div>
-        <div class="Contact">
-          <div class="LPContainer fade2" id="phone">
+        <div class="Contact fade2">
+          <div class="LPContainer" id="phone">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PhoneUs">
                 <i class="far fa-phone-square"></i>
             </button>
           </div>
-          <div class="LPContainer fade2" id="phone">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-              Launch demo modal
+          <div class="LPContainer" id="email">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EmailUs">
+                <i class="far fa-envelope-square"></i>
             </button>
-          </div>
-
-          <div class="LPContainer fade2" id="email">
-            <i class="far fa-envelope-square"></i>
           </div>
         </div>
       </div>
 
       <div class="enter">
-        <a href="#">
+        <a href="./home.html">
           <img class="fade3" src="./Resources/images/logoAsArrow2.png" alt="">
         </a>
       </div>
-
+      </main>
     <div class="grid">
       <div class="square">
         <i class="fal fa-address-book"></i>
@@ -401,10 +420,10 @@
       </div>
     </div>
 
-    </main>
-<!--    <script>$(".fade1").hide(0).delay(500).fadeIn(5000)</script>
-    <script>$(".fade2").hide(0).delay(900).fadeIn(5000)</script>
-    <script>$(".fade3").hide(0).delay(1500).fadeIn(5000)</script> -->
+    <script>$(".fade0").hide(0).delay(1500).fadeIn(5000)</script>
+    <script>$(".fade1").hide(0).delay(2200).fadeIn(5000)</script>
+    <script>$(".fade2").hide(0).delay(2000).fadeIn(5000)</script>
+    <script>$(".fade3").hide(0).delay(5000).fadeIn(5000)</script>
 
     <script type="text/javascript">
       $('#myModal').on('shown.bs.modal', function () {$('#myInput').trigger('focus')})

@@ -1,0 +1,194 @@
+#HomeTitle {
+  height: 6em;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+#HomeTitle h1 {
+  color: #00165A;
+  font-size: 3em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.belowTitle {
+  position: relative;
+  top: 6em;
+}
+/* officeDetails */
+
+.officeDetails {
+  width: 100%;
+  display: flex;
+  height: 6em;
+  justify-content: center;
+  align-items: center;
+  background-color: #00165A;
+}
+.ODContent, .navContent {
+  width: 70rem;
+  margin: auto 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ODContent .Contact {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  margin-left: 2em;
+}
+
+.Contact .smallContainer {
+  height: 4em;
+  width: 4em;
+  background-color: #FFFFFF;
+}
+.Contact #email.smallContainer {
+  margin-left: 1.5em;
+}
+
+.Contact .smallContainer i {
+  font-size: 2em;
+}
+.Contact .smallContainer:hover {
+  border-color: #FFFFFF;
+  background-color: #800020;
+}
+
+/* navigation */
+#navigation {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 6rem;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #FFFFFF;
+}
+.menu {
+  display: flex;
+  margin: 1rem auto;
+}
+.menu ul {
+  list-style-type: none;
+  display: inline-flex;
+  margin: auto;
+}
+.menu ul li i{
+  margin-right: 0.5rem;
+}
+#navigation ul li {
+  display: inline-flex;
+  padding: 0;
+  margin: 0.2rem auto;
+  height: 4rem;
+  border-left: 0.125rem solid #800020;
+  border-right: 0.125rem solid #800020;
+  transition: all 1s linear;
+}
+#navigation ul li p {
+  display: inline-flex;
+  font-family: "Rufina", "Quattrocento", Georgia, serif;
+  font-weight: 700;
+  margin: 0 auto;
+}
+#navigation ul li:first-child {
+  border-left: none;
+}
+#navigation ul li:last-child {
+  border-right: none;
+}
+#navigation ul li:hover {
+  background-color: #800020;
+}
+#navigation ul li a {
+  color: #00165A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+#navigation ul li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* end */
+/* home specific Nav */
+#navigation li.openTab, #navigation .openTab a {
+  cursor: default;
+  pointer-events: none;
+  color: #FFFFFF;
+  background-color: #800020;
+}
+/* main home*/
+main#home .left {
+  width: 20%;
+  height: 30em;
+
+}
+main#home .middle{
+  right: 55%;
+}
+main#home .right{
+  width: 25%;
+}
+
+/* customer type */
+/* Hide the browser's default radio button */
+.customerType {
+  display: flex;
+  height:  100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em auto;
+}
+.customerType .smallContainer {
+  padding: 0.5em;
+  height: 5em;
+  width: 5em;
+  background: #CCCCCC;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smallContainer input {
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+}
+.checkmark {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
